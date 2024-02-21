@@ -22,7 +22,7 @@ class House:
         self.owner = owner
         self.status = "Can be sold"
 
-    def sell_house(self, buyer, loan_amount=None):
+    def sell_house(self, buyer, loan_amount):
         if loan_amount is None:
             self.owner.deposit += self.price
             self.owner = buyer
@@ -36,9 +36,6 @@ class House:
             print(f"House has been sold. New owner: {self.owner.name}, new status: {self.status}")
 
     
-       
-
-
     def __str__(self):
         return f"House id: {self.ID} House owner: {self.owner.name}, house status: {self.status}"
         
