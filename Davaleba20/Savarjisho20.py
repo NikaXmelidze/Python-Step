@@ -38,7 +38,8 @@ class BinaryTree:
             else:
                 self._print_leaf_nodes(node.left, leafs)
                 self._print_leaf_nodes(node.right, leafs)
-        
+
+    #davalebis metodi(uketesadac sheidzleboda, ubralod int it ver gavakete wesierad)    
     def count_edges(self):
         count = []
         self._count_edges(self.root, count)
@@ -85,8 +86,11 @@ binary_tree.insert(11)
 binary_tree.insert(25)
 binary_tree.insert(14)
 binary_tree.insert(2)
-
+binary_tree.insert(20)
+binary_tree.insert(15)
+binary_tree.insert(1)
 binary_tree.printParent()
 
+#davaleba
 binary_tree.print_leaf_nodes()
 binary_tree.count_edges()
